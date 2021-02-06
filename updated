@@ -17,7 +17,7 @@ elif((("attack" in data) or ("heart attack" in data) or ("heart pain" in data)))
         pyttsx3.speak("Have the person sit down, rest, and try to keep calm. Loosen any tight clothing. Ask if the person takes any chest pain medicine, such as nitroglycerin, for a known heart condition, and help them take it.")
         pyttsx3.speak("Don't worry you will be alright just follow below procedures")
 elif((("bone " in data) or (" joint" in data) or ("fractures" in data) or ("tumors" in data)) and ("cancer" in data)):
-        pyttsx3.speak("Don't worry you will be alright just follow below procedures)
+        pyttsx3.speak("Don't worry you will be alright just follow below procedures")
         pyttsx3.speak("you are required to have a CT Scan as soon as possible")
 elif((("run" in p) or ("execute" in p) or ("open" in p)) and (("text" in p) or ("notepad" in p) or ("editor" in p))):
         pyttsx3.speak("Don't worry you will be alright just follow below procedures)
