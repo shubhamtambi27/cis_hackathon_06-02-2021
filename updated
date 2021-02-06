@@ -1,4 +1,3 @@
-#Updated As at 14:00
 import speech_recognition as sr
 import pyttsx3
 r=sr.Recognizer()
@@ -24,6 +23,12 @@ elif((("bone " in data) or (" joint" in data) or ("fractures" in data) or ("tumo
 elif("Thanks" in data) or ("Thank you" in data):
         print("It's was our pleasure to help you!!")
         pyttsx3.speak("Don't worry you will be alright just follow below procedures")
+elif((("muscle weakness" in data) or ("muscle pain" in data) or ("dry skin" in data)) or (("swelling" in data) or ("feeling tired" in data) or ("mood swings" in data) or ("weight gain" in data))):
+        pyttsx3.speak("Don't worry you will be alright just follow below procedures")
+        pyttsx3.speak(" it looks like thyroid disease !! it can be cured by Antithyroid medication, radioactive iodine, and surgery are all effective treatments and can restore thyroid function to normal.")
+elif(("high fever" in data)  or ("flu-like" in data) or ("yellowing of skin and eyes" in data)) :
+        pyttsx3.speak("Don't worry you will be alright just follow below procedures")
+        pyttsx3.speak("you have a yellow fever !!use insect repellent, wear long-sleeved shirts and long pants, and get vaccinated.")        
 else:
         pyttsx3.speak("Please contact your nearest doctor")
         print("---------------------------------------")
