@@ -1,6 +1,6 @@
 #might have errors
 import speech_recognition as sr
-import pyttsx3 as pt
+import pyttsx3
 r=sr.Recognizer()
 with sr.Microphone() as source:
         print("Hey There!")
@@ -19,10 +19,6 @@ elif((("attack" in data) or ("heart attack" in data) or ("heart pain" in data)))
 elif((("bone " in data) or (" joint" in data) or ("fractures" in data) or ("tumors" in data)) and ("cancer" in data)):
         pyttsx3.speak("Don't worry you will be alright just follow below procedures")
         pyttsx3.speak("you are required to have a CT Scan as soon as possible")
-elif((("run" in p) or ("execute" in p) or ("open" in p)) and (("text" in p) or ("notepad" in p) or ("editor" in p))):
-        pyttsx3.speak("Don't worry you will be alright just follow below procedures")
-        pyttsx3.speak("please go ahead for ECG")
-        pyttsx3.speak("Don't worry you will be alright just follow below procedures")
 elif("Thanks" in data) or ("Thank you" in data):
         print("It's was our pleasure to help you!!")
         pyttsx3.speak("Don't worry you will be alright just follow below procedures")
