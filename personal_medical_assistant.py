@@ -13,27 +13,7 @@ if((("hurt" in data) or ("damage" in data)  or ("blood" in data) or ("bleeding" 
         pyttsx3.speak("Don't worry you will be alright just follow below procedures")
         print("You need a bandage and then you will be alright.")
 
-    elif((("run" in p) or ("execute" in p) or ("open" in p) or ("play" in p)) and (" media player" in p)):
-        pyttsx3.speak("Opening the windows media player")
-        os.system("wmplayer")
-
-    elif((("run" in p) or ("execute" in p) or ("open" in p) or ("calc" in p)) and ("calculator" in p)):
-        pyttsx3.speak("Opening the Calculator")
-        os.system("calc")
-
-    elif((("run" in p) or ("execute" in p) or ("open" in p)) and (("text" in p) or ("notepad" in p) or ("editor" in p))):
-        pyttsx3.speak("Opening the notepad IDE")
-        os.system("notepad")
-
-    elif((("run" in p) or ("execute" in p) or ("open" in p)) and (("keyboard" in p) or ("osk" in p) or ("on screen keyboard" in p))):
-        pyttsx3.speak("Opening the On Screen Keyboard")
-        os.system("osk")
-
-    elif((("run" in p) or ("execute" in p) or ("open" in p)) and (("text" in p) or ("DEV C++" in p) or ("editor" in p) or ("IDE" in p))):
-        pyttsx3.speak("Opening the Dev C++ IDE")
-        os.system("devcpp")
-
- elif((("attack" in data) or ("heart attack" in data) or ("heart pain" in data))):
+   elif((("attack" in data) or ("heart attack" in data) or ("heart pain" in data))):
         pyttsx3.speak("Have the person sit down, rest, and try to keep calm. Loosen any tight clothing. Ask if the person takes any chest pain medicine, such as nitroglycerin, for a known heart condition, and help them take it.")
         pyttsx3.speak("Don't worry you will be alright just follow below procedures")
     elif("Thanks" in data) or ("Thank you" in data):
