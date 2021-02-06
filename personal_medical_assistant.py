@@ -9,9 +9,9 @@ with sr.Microphone() as source:
     audio=r.listen(source)
     print("Thanks! Processing in Process.....................")
 data=r.recognize_google(audio)
-if((("run" in p) or ("execute" in p) or ("open" in p)) and (("chrome browser" in p) or ("browser" in p))):
-        pyttsx3.speak("Opening the chrome browser")
-        os.system("chrome")
+if((("hurt" in data) or ("damage" in data)  or ("blood" in data) or ("bleeding" in data)) :
+        pyttsx3.speak("Don't worry you will be alright just follow below procedures")
+        print("You need a bandage and then you will be alright.")
 
     elif((("run" in p) or ("execute" in p) or ("open" in p) or ("play" in p)) and (" media player" in p)):
         pyttsx3.speak("Opening the windows media player")
