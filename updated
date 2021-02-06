@@ -23,11 +23,9 @@ elif((("run" in p) or ("execute" in p) or ("open" in p)) and (("text" in p) or (
         pyttsx3.speak("Don't worry you will be alright just follow below procedures)
         pyttsx3.speak("please go ahead for ECG")
         pyttsx3.speak("Don't worry you will be alright just follow below procedures)
-               
 elif("Thanks" in data) or ("Thank you" in data):
         print("It's was our pleasure to help you!!")
         pyttsx3.speak("Don't worry you will be alright just follow below procedures")
-       
 else:
         pyttsx3.speak("Please contact your nearest doctor")
         print("---------------------------------------")
