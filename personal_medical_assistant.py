@@ -33,15 +33,16 @@ if((("run" in p) or ("execute" in p) or ("open" in p)) and (("chrome browser" in
         pyttsx3.speak("Opening the Dev C++ IDE")
         os.system("devcpp")
 
-    elif((("run" in p) or ("execute" in p) or ("open" in p)) and (("text" in p) or ("notepad++" in p) or ("editor" in p) or ("IDE" in p))):
-        pyttsx3.speak("Opening the notepad++ IDE")
-        os.system("notepad++")
-    elif("exit" in p) or ("quit" in p):
+ elif((("attack" in data) or ("heart attack" in data) or ("heart pain" in data))):
+        pyttsx3.speak("Have the person sit down, rest, and try to keep calm. Loosen any tight clothing. Ask if the person takes any chest pain medicine, such as nitroglycerin, for a known heart condition, and help them take it.")
+        pyttsx3.speak("Don't worry you will be alright just follow below procedures")
+    elif("Thanks" in data) or ("Thank you" in data):
+        print("It's was our pleasure to help you!!")
+        pyttsx3.speak("Don't worry you will be alright just follow below procedures")
         break
     else:
-        pyttsx3.speak("We Apologise the Programs are not avalilable here but will come soon")
+        pyttsx3.speak("Please contact your nearest doctor")
         print("---------------------------------------")
-        print("Does not support")
+       
         print("---------------------------------------")
-
 
